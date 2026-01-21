@@ -16,3 +16,24 @@ O sistema processa as informações fornecidas.
 
 Regra de Negócio:
 E-mail e senha são campos obrigatórios para o cadastro.
+
+
+Cenário triste:
+O usuário acessa pagina de cadastro.
+Clica direto em cadastrar sem preencher nada.
+
+Resultados esperados:
+Aparece mensagens de erro orientando o usuário a preencher os campos corrretamente.
+
+
+Cenário:
+Login no sistema com sucesso
+
+Passos:
+ o usuario acessa pagina de login
+ o usuario insere o email corretamente
+ o usuario clica em botao "Entrar"
+
+ Resultdados esperados: 
+ O sistema autentica as credenciais
+ o sistema redireciona  o usuario para a pagina /home

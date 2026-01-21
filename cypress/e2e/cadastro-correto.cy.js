@@ -9,8 +9,8 @@ describe('Verificação da página de cadastro do ADOPET', () => {
     
     cy.visit('https://adopet-frontend-cypress.vercel.app/');
     cy.get('[data-test="register-button"]').click();
-    cy.get('[data-test="input-name"]').type(randomName);
-    cy.get('[data-test="input-email"]').type(randomEmail);
+    cy.get('[data-test="input-name"]').type('giba');
+    cy.get('[data-test="input-email"]').type('gibateste@email.com');
     cy.get('[data-test="input-password"]').type('Senha123');
     cy.get('[data-test="input-confirm-password"]').type('Senha123');
     cy.get('[data-test="submit-button"]').click();
@@ -50,4 +50,3 @@ describe('Verificação de pets na página do ADOPET', () => {
         cy.get('.header__message').click()  
     })
 })
-
